@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Licornes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px;
+        }
+        .unicorn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+        }
+        .unicorn img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 15px;
+        }
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: #ff7eb3;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌈 Location de Licornes Magiques 🦄</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#unicorns">Nos Licornes</a></li>
+                <li><a href="#booking">Réservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Pourquoi louer une licorne ?</h2>
+        <p>Découvrez une expérience féérique en louant une licorne pour vos événements spéciaux, anniversaires et mariages.</p>
+    </section>
+    
+    <section id="unicorns">
+        <h2>Nos Licornes Disponibles</h2>
+        <div class="unicorn">
+            <img src="licorne1.jpg" alt="Licorne Arc-en-ciel">
+            <h3>Arc-en-ciel</h3>
+            <p>Parfaite pour illuminer votre journée.</p>
+        </div>
+        <div class="unicorn">
+            <img src="licorne2.jpg" alt="Licorne Étoilée">
+            <h3>Étoilée</h3>
+            <p>Elle vous emmènera au-delà des étoiles.</p>
+        </div>
+    </section>
+    
+    <section id="booking">
+        <h2>Réservez votre licorne</h2>
+        <form>
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="unicorn">Choisissez votre licorne :</label><br>
+            <select id="unicorn" name="unicorn">
+                <option value="arc-en-ciel">Arc-en-ciel</option>
+                <option value="etoilee">Étoilée</option>
+            </select><br>
+            
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Location de Licornes - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
