@@ -34,7 +34,7 @@
         section {
             padding: 50px;
         }
-        .unicorn {
+        .unicorn, .service {
             display: inline-block;
             background: rgba(255, 255, 255, 0.2);
             padding: 20px;
@@ -51,7 +51,7 @@
             display: inline-block;
             border-radius: 15px;
         }
-        input, select, button {
+        input, select, button, textarea {
             margin: 10px 0;
             padding: 10px;
             border-radius: 5px;
@@ -77,15 +77,16 @@
             <ul>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#unicorns">Nos Licornes</a></li>
+                <li><a href="#services">Nos Services</a></li>
                 <li><a href="#booking">Réservation</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Nous Contacter</a></li>
             </ul>
         </nav>
     </header>
     
     <section id="about">
-        <h2>Pourquoi louer une licorne ?</h2>
-        <p>Découvrez une expérience féérique en louant une licorne pour vos événements spéciaux, anniversaires et mariages.</p>
+        <h2>Qui sommes-nous ?</h2>
+        <p>SpeedUnicorn est une entreprise dédiée à rendre vos événements magiques en vous proposant des licornes majestueuses à la location.</p>
     </section>
     
     <section id="unicorns">
@@ -99,6 +100,22 @@
             <img src="licorne2.jpg" alt="Licorne Étoilée">
             <h3>Étoilée</h3>
             <p>Elle vous emmènera au-delà des étoiles.</p>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="service">
+            <h3>Mariages</h3>
+            <p>Faites une entrée magique avec une licorne lors de votre cérémonie de mariage.</p>
+        </div>
+        <div class="service">
+            <h3>Anniversaires</h3>
+            <p>Offrez une expérience inoubliable pour un anniversaire féerique.</p>
+        </div>
+        <div class="service">
+            <h3>Baptêmes</h3>
+            <p>Ajoutez une touche de magie aux baptêmes avec nos licornes.</p>
         </div>
     </section>
     
@@ -121,8 +138,25 @@
         </form>
     </section>
     
+    <section id="contact">
+        <h2>Nous Contacter</h2>
+        <p>Pour toute question ou demande spéciale, contactez-nous via le formulaire ci-dessous :</p>
+        <form>
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 Location de Licornes - Tous droits réservés.</p>
+        <p>&copy; 2025 SpeedUnicorn - Tous droits réservés.</p>
     </footer>
 </body>
 </html>
